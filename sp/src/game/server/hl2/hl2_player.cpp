@@ -3066,6 +3066,9 @@ void CHL2_Player::PlayerUse ( void )
 
 			pUseEntity->AcceptInput( "Use", this, this, emptyVariant, USE_TOGGLE );
 
+			// Testing
+			//ConMsg("Picked Up: [%d] %s\n", pUseEntity->entindex(), pUseEntity->GetModelName().ToCStr());
+
 			usedSomething = true;
 		}
 		// UNDONE: Send different USE codes for ON/OFF.  Cache last ONOFF_USE object to send 'off' if you turn away
